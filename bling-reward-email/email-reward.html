@@ -99,8 +99,8 @@ Sizes: [
     			*/
     			.a[href^="tel"], a[href^="sms"] {text-decoration:none!important;color:#606060!important;pointer-events:none!important;cursor:default!important;}
     			.mobile_link a[href^="tel"], .mobile_link a[href^="sms"] {text-decoration:none!important;color:#606060!important;pointer-events:auto!important;cursor:default!important;}
-
-
+    
+    
     			/* MOBILE STYLES */
     			@media only screen and (max-width: 480px){
     				/*////// CLIENT-SPECIFIC STYLES //////*/
@@ -148,45 +148,8 @@ Sizes: [
     				td[class="buttonContent"] a{padding:15px !important;}
     
     			}
-/*          .rewards-image {
-            background: url("reward-points-update_320.jpg");
-          }*/
-          .rewards-info td {
-            font-size: 12px;
-          }
-          .textContent-middle{
-            vertical-align: middle;
-            height: 40px;
-          }
-          @media only screen and (min-width: 415px){  
-
-          } 
-          @media only screen and (min-width: 375px){  
-/*            .rewards-image {
-              background: url("reward-points-update_375.jpg");
-            } */
-          } 
-          @media only screen and (min-width: 414px){  
-/*            .rewards-image {
-              background: url("reward-points-update_414.jpg");
-            } */
-            .image-table {
-              padding: 70px;
-            }
-            .textContent-middle{
-              vertical-align: middle;
-              height: 100px;
-            }
-          }     
-          @media only screen and (min-width: 600px){  
-/*            .rewards-image {
-              background: url("reward-points-update_600.png");
-            } */
-            .rewards-info td {
-              font-size: 16px;
-            } 
-          }            			
-          /*  CONDITIONS FOR ANDROID DEVICES ONLY
+    
+    			/*  CONDITIONS FOR ANDROID DEVICES ONLY
     			*   http://developer.android.com/guide/webapps/targeting.html
     			*   http://pugetworks.com/2011/04/css-media-queries-for-targeting-different-mobile-devices/ ;
     			=====================================================*/
@@ -233,7 +196,7 @@ Sizes: [
 		<![endif]-->
 </head>
 
-<body xbgcolor="#E1E1E1" leftmargin="0" marginwidth="0" topmargin="0" marginheight="0" offset="0">
+<body bgcolor="#E1E1E1" leftmargin="0" marginwidth="0" topmargin="0" marginheight="0" offset="0">
 
   <!-- CENTER THE EMAIL // -->
   <!--
@@ -253,11 +216,11 @@ Sizes: [
 
           <!-- EMAIL HEADER // -->
           <!--
-							The table "emailBody" is the email's container.
-							Its width can be set to 100% for a color band
-							that spans the width of the page.
-						-->
-          <table xbgcolor="#E1E1E1" border="0" cellpadding="0" cellspacing="0" width="600" id="emailHeader">
+              The table "emailBody" is the email's container.
+              Its width can be set to 100% for a color band
+              that spans the width of the page.
+            -->
+          <table bgcolor="#E1E1E1" border="0" cellpadding="0" cellspacing="0" width="600" align="center" id="emailHeader">
 
             <!-- HEADER ROW // -->
             <tr>
@@ -272,18 +235,18 @@ Sizes: [
                           <td valign="top" width="600" class="flexibleContainerCell">
 
                             <!-- CONTENT TABLE // -->
-                            <table align="left" border="0" cellpadding="0" cellspacing="0" width="100%">
+                            <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
                               <tr>
                                 <!--
-																		The "invisibleIntroduction" is the text used for short preview
-																		of the email before the user opens it (50 characters max). Sometimes,
-																		you do not want to show this message depending on your design but this
-																		text is highly recommended.
+                                    The "invisibleIntroduction" is the text used for short preview
+                                    of the email before the user opens it (50 characters max). Sometimes,
+                                    you do not want to show this message depending on your design but this
+                                    text is highly recommended.
 
-																		You do not have to worry if it is hidden, the next <td> will automatically
-																		center and apply to the width 100% and also shrink to 50% if the first <td>
-																		is visible.
-																	-->
+                                    You do not have to worry if it is hidden, the next <td> will automatically
+                                    center and apply to the width 100% and also shrink to 50% if the first <td>
+                                    is visible.
+                                  -->
                                 <td align="left" valign="middle" id="invisibleIntroduction" class="flexibleContainerBox" style="display:none !important; mso-hide:all;">
                                   <table border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width:100%;">
                                     <tr>
@@ -326,11 +289,17 @@ Sizes: [
 
           <!-- EMAIL BODY // -->
           <!--
-							The table "emailBody" is the email's container.
-							Its width can be set to 100% for a color band
-							that spans the width of the page.
-						-->
+              The table "emailBody" is the email's container.
+              Its width can be set to 100% for a color band
+              that spans the width of the page.
+            -->
           <table bgcolor="#FFFFFF" border="0" cellpadding="0" cellspacing="0" width="600" id="emailBody">
+
+
+
+
+
+
 
 
 
@@ -342,43 +311,55 @@ Sizes: [
                   <tr>
                     <td align="center" valign="Xtop">
                       <!-- FLEXIBLE CONTAINER // -->
-                      <table border="0" align="center" cellpadding="20" cellspacing="0" width="100%">
+                      <!--<table border="0" cellpadding="50" cellspacing="0" width="100%">
                         <tr>
                           <td valign="middle" class="textContent">
-                            <div style="text-align:center;font-family:Helvetica,Arial,sans-serif;font-size:36px;color:#000000;line-height:135%;">Congrats!  You just earned <span style="color:#e7168e; font-style: italic;">25</span> Reward Points</div>
+                            <div style="text-align:center;font-family:Helvetica,Arial,sans-serif;font-size:36px;color:#000000;line-height:135%; padding-bottom: 30px;">Congrats!  You just earned <span style="color:#e7168e; font-style: italic;">25</span> Reward Points</div>
+                          </td>
+                        </tr>
+                      </table>-->
+
+                      <!-- // FLEXIBLE CONTAINER -->
+                    </td>
+                  </tr>
+                </table>
+                <!-- // CENTERING TABLE -->
+              </td>
+            </tr>
+            <!-- // MODULE ROW -->
+
+
+
+
+
+            <tr>
+              <td align="center" valign="Xtop">
+                <!-- CENTERING TABLE // -->
+                <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                  <tr>
+                    <td align="center" valign="top">
+                      <!-- FLEXIBLE CONTAINER // -->
+                                            <table border="0" align="center" cellpadding="50" cellspacing="0" width="100%">
+                        <tr>
+                          <td valign="middle" class="textContent">
+                            <div style="text-align:center;font-family:Helvetica,Arial,sans-serif;font-size:1.5em;color:#000000;line-height:135%; ">Congrats!  You just earned <span style="color:#e7168e; font-style: italic;">25</span> Reward Points</div>
                           </td>
                         </tr>
                       </table>
-                      <table border="0" cellpadding="0" cellspacing="0" width="600" align="center" class="flexibleContainer">
+
+                      <table border="0" cellpadding="0" cellspacing="0" width="600" class="flexibleContainer">
                         <tr>
 
-                          <!-- BULLETPROOF BACKGROUND IMAGE -->
-                          <td class="rewards-image" background="reward-points-update-320.png" bgcolor="#ffffff" style="background-repeat: no-repeat;" width="100%" height="auto" valign="top">
-                            <!--[if gte mso 9]>
-                            <v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style="width:600px;height:600px;">
-                              <v:fill type="tile" src="https://i.imgur.com/YJOX1PC.png" color="#ffffff" />
-                              <v:textbox inset="0,0,0,0">
-                            <![endif]-->
-                              <div>
-                                  <!-- CONTENT TABLE // -->
-                                  <table class="image-table" border="0" cellpadding="15" cellspacing="0" width="100%" height="250">
-                                    <tr>
-                                      <td valign="middle" class="textContent">
+                        <td valign="middle" align="center" class="textContent">
+                          <div style="background-size:100% auto; position:absolute; max-width:414px; width:100%; ">
+                            <div style="width:87.5%;">
                                         <div style="text-align:center;font-family:Helvetica,Arial,sans-serif;color:#000000;line-height:200%;">Your current balance is 125 Reward Points</div>
                                         <div style="text-align:center;font-family:Helvetica,Arial,sans-serif;cline-height:200%;color:#000000;">You can spend them on new sparkles anytime!</div>
                                         <div style="text-align:center;font-family:Helvetica,Arial,sans-serif;line-height:200%;color:#000000;">Free shipping on us with a $25 purchase!</div>
-                                      </td>
-                                    </tr>
-                                  </table>
-                                  <!-- // CONTENT TABLE -->
-                            </div>
-                            <!--[if gte mso 9]>
-                              </v:textbox>
-                            </v:rect>
-                            <![endif]-->
-                          </td>
-
-                          <!-- BULLETPROOF BACKGROUND IMAGE -->
+                            </div>                    
+                          </div>
+                          <img src="reward-points-update.png" width="100%" height="auto" alt="" style="display:block; background-color:#ffffff; color: #ffffff; font-size: 18px; font-size: 2.0rem;" border="0" />
+                        </td>
 
                         </tr>
                       </table>
@@ -389,7 +370,7 @@ Sizes: [
                 <!-- // CENTERING TABLE -->
               </td>
             </tr>
-            <!-- // MODULE ROW -->
+
 
 
 
@@ -595,27 +576,8 @@ complete
 
 
           </table>
-          <!-- // END -->
-
-          <!-- EMAIL FOOTER // -->
-          <!--
-							The table "emailBody" is the email's container.
-							Its width can be set to 100% for a color band
-							that spans the width of the page.
-						-->
-          <table bgcolor="#E1E1E1" border="0" cellpadding="0" cellspacing="0" width="600" id="emailFooter">
-
-            <!-- FOOTER ROW // -->
-            <!--
-								To move or duplicate any of the design patterns
-								in this email, simply move or copy the entire
-								MODULE ROW section for each content block.
-							-->
 
 
-
-          </table>
-          <!-- // END -->
 
         </td>
       </tr>
