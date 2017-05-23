@@ -99,8 +99,8 @@ Sizes: [
     			*/
     			.a[href^="tel"], a[href^="sms"] {text-decoration:none!important;color:#606060!important;pointer-events:none!important;cursor:default!important;}
     			.mobile_link a[href^="tel"], .mobile_link a[href^="sms"] {text-decoration:none!important;color:#606060!important;pointer-events:auto!important;cursor:default!important;}
-    
-    
+
+
     			/* MOBILE STYLES */
     			@media only screen and (max-width: 480px){
     				/*////// CLIENT-SPECIFIC STYLES //////*/
@@ -148,8 +148,38 @@ Sizes: [
     				td[class="buttonContent"] a{padding:15px !important;}
     
     			}
-    
-    			/*  CONDITIONS FOR ANDROID DEVICES ONLY
+          .rewards-image {
+            background: url("reward-points-update_320.jpg");
+          }
+          .textContent-middle{
+            vertical-align: middle;
+            height: 40px;
+          }
+          @media only screen and (min-width: 415px){  
+            .image-table {
+              padding: 70px;
+            }
+            .textContent-middle{
+              vertical-align: middle;
+              height: 100px;
+            }
+          } 
+          @media only screen and (min-width: 375px){  
+            .rewards-image {
+              background: url("reward-points-update_375.jpg");
+            } 
+          } 
+          @media only screen and (min-width: 414px){  
+            .rewards-image {
+              background: url("reward-points-update_414.jpg");
+            } 
+          }     
+          @media only screen and (min-width: 600px){  
+            .rewards-image {
+              background: url("reward-points-update_600.png");
+            } 
+          }            			
+          /*  CONDITIONS FOR ANDROID DEVICES ONLY
     			*   http://developer.android.com/guide/webapps/targeting.html
     			*   http://pugetworks.com/2011/04/css-media-queries-for-targeting-different-mobile-devices/ ;
     			=====================================================*/
@@ -309,7 +339,7 @@ Sizes: [
                         <tr>
 
                           <!-- BULLETPROOF BACKGROUND IMAGE -->
-                          <td background="https://i.imgur.com/YJOX1PC.png" bgcolor="#ffffff" width="600"  valign="top">
+                          <td class="rewards-image" background="xreward-points-update_600.png" bgcolor="#ffffff" width="600"  valign="middle">
                             <!--[if gte mso 9]>
                             <v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style="width:600px;height:600px;">
                               <v:fill type="tile" src="https://i.imgur.com/YJOX1PC.png" color="#ffffff" />
@@ -317,9 +347,9 @@ Sizes: [
                             <![endif]-->
                               <div>
                                   <!-- CONTENT TABLE // -->
-                                  <table border="0" cellpadding="70" cellspacing="0" width="100%" height="400">
+                                  <table class="image-table" border="0" cellpadding="15" cellspacing="0" width="100%" height="400">
                                     <tr>
-                                      <td valign="center" class="textContent">
+                                      <td valign="middle" class="textContent">
                                         <div style="text-align:center;font-family:Helvetica,Arial,sans-serif;font-size:36px;color:#000000;line-height:135%; padding-bottom: 30px;">Congrats!  You just earned <span style="color:#e7168e; font-style: italic;">25</span> Reward Points</div>
                                         <div style="text-align:center;font-family:Helvetica,Arial,sans-serif;font-size:18px;color:#000000;line-height:200%;">Your current balance is 125 Reward Points</div>
                                         <div style="text-align:center;font-family:Helvetica,Arial,sans-serif;font-size:18px;cline-height:200%;color:#000000;">You can spend them on new sparkles anytime!</div>
@@ -507,11 +537,11 @@ complete
                             <!-- CONTENT TABLE // -->
                             <table align="left" border="0" cellpadding="0" cellspacing="0" width="100%">
                               <tr>
-                                <td align="left" valign="top" class="flexibleContainerBox">
+                                <td align="left" valign="middle" class="flexibleContainerBox">
                                   <table border="0" cellpadding="10" cellspacing="0" width="230" style="max-width:100%;">
                                     <tr>
-                                      <td align="left" class="textContent">
-                                        <img src="bling-need-help.jpg" width="220" class="flexibleImageSmall" style="max-width:100%;" alt="Text" title="Text" />
+                                      <td align="left" valign="middle" class="textContent textContent-middle">
+                                        <img src="bling-need-help_230x34.jpg" width="220" class="flexibleImageSmall" style="max-width:100%;" alt="Text" title="Text" />
                                       </td>
                                     </tr>
                                   </table>
