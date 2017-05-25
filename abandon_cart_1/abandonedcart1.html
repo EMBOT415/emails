@@ -1,39 +1,4 @@
-<!--
-==================== Respmail ====================
-Respmail is a response HTML email designed to work
-on all major devices and responsive for smartphones
-that support media queries.
 
-** NOTE **
-This template comes with a lot of standard features
-that has been thoroughly tested on major platforms
-and devices, it is extremely flexible to use and
-can be easily customized by removing any row that
-you do not need.
-
-it is gauranteed to work 95% without any major flaws,
-any changes or adjustments should thoroughly be
-tested and reviewed to match with the general
-structure.
-
-** Profile **
-Licensed under MIT (https://github.com/charlesmudy/responsive-html-email-template/blob/master/LICENSE)
-Designed by Shina Charles Memud
-Respmail v1.2 (http://charlesmudy.com/respmail/)
-
-** Quick modification **
-We are using width of 500 for the whole content,
-you can change it any size you want (e.g. 600).
-The fastest and safest way is to use find & replace
-Sizes: [
-    wrapper   : '500',
-    columns   : '210',
-    x-columns : [
-            left : '90',
-            right: '350'
-        ]
-    }
-  -->
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -43,7 +8,10 @@ Sizes: [
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <meta name="format-detection" content="telephone=no" />
-    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lato:400" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lato:400i" rel="stylesheet">
+  <link href='https://fonts.googleapis.com/css?family=Lato:100' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Lato:100italic' rel='stylesheet' type='text/css'>
   <!-- disable auto telephone linking in iOS -->
   <title>Bling Jewelry</title>
   <style type="text/css">
@@ -54,7 +22,7 @@ Sizes: [
           table[id=bodyTable] {width:100%!important;margin:auto;max-width:500px!important;color:#7A7A7A;font-weight:normal;}
           img, a img{border:0; outline:none; text-decoration:none;height:auto; line-height:100%;}
           a {text-decoration:none !important;border-bottom: 1px solid;}
-          h1, h2, h3, h4, h5, h6{color:#5F5F5F; font-weight:normal; font-family:Helvetica; font-size:20px; line-height:125%; text-align:Left; letter-spacing:normal;margin-top:0;margin-right:0;margin-bottom:10px;margin-left:0;padding-top:0;padding-bottom:0;padding-left:0;padding-right:0;}
+          h1, h2, h3, h4, h5, h6{color:#5F5F5F; font-weight:normal; font-size:20px; line-height:125%; text-align:Left; letter-spacing:normal;margin-top:0;margin-right:0;margin-bottom:10px;margin-left:0;padding-top:0;padding-bottom:0;padding-left:0;padding-right:0;}
     
           /* CLIENT-SPECIFIC STYLES */
           .ReadMsgBody{width:100%;} .ExternalClass{width:100%;} /* Force Hotmail/Outlook.com to display emails at full width. */
@@ -82,11 +50,11 @@ Sizes: [
           #emailFooter{background-color:#E1E1E1;}
           .nestedContainer{background-color:#F8F8F8; border:1px solid #CCCCCC;}
           .emailButton{background-color:#205478; border-collapse:separate;}
-          .buttonContent{color:#FFFFFF; font-family:Helvetica; font-size:18px; font-weight:bold; line-height:100%; padding:15px; text-align:center;}
+          .buttonContent{color:#FFFFFF; font-size:18px; font-weight:bold; line-height:100%; padding:15px; text-align:center;}
           .buttonContent a{color:#FFFFFF; display:block; text-decoration:none!important; border:0!important;}
           .emailCalendar{background-color:#FFFFFF; border:1px solid #CCCCCC;}
-          .emailCalendarMonth{background-color:#205478; color:#FFFFFF; font-family:Helvetica, Arial, sans-serif; font-size:16px; font-weight:bold; padding-top:10px; padding-bottom:10px; text-align:center;}
-          .emailCalendarDay{color:#205478; font-family:Helvetica, Arial, sans-serif; font-size:60px; font-weight:bold; line-height:100%; padding-top:20px; padding-bottom:20px; text-align:center;}
+          .emailCalendarMonth{background-color:#205478; color:#FFFFFF; font-size:16px; font-weight:bold; padding-top:10px; padding-bottom:10px; text-align:center;}
+          .emailCalendarDay{color:#205478; font-size:60px; font-weight:bold; line-height:100%; padding-top:20px; padding-bottom:20px; text-align:center;}
           .imageContentText {margin-top: 10px;line-height:0;}
           .imageContentText a {line-height:0;}
           #invisibleIntroduction {display:none !important;} /* Removing the introduction text from the view */
@@ -200,27 +168,14 @@ Sizes: [
 <body bgcolor="#E1E1E1" leftmargin="0" marginwidth="0" topmargin="0" marginheight="0" offset="0">
 
   <!-- CENTER THE EMAIL // -->
-  <!--
-    1.  The center tag should normally put all the
-      content in the middle of the email page.
-      I added "table-layout: fixed;" style to force
-      yahoomail which by default put the content left.
 
-    2.  For hotmail and yahoomail, the contents of
-      the email starts from this center, so we try to
-      apply necessary styling e.g. background-color.
-    -->
   <center style="background-color:#E1E1E1;">
     <table border="0" cellpadding="0" cellspacing="0" height="100%" width="100%" id="bodyTable" style="table-layout: fixed;max-width:100% !important;width: 100% !important;min-width: 100% !important;">
       <tr>
         <td align="center" valign="top" id="bodyCell">
 
           <!-- EMAIL HEADER // -->
-          <!--
-              The table "emailBody" is the email's container.
-              Its width can be set to 100% for a color band
-              that spans the width of the page.
-            -->
+
           <table bgcolor="#E1E1E1" border="0" cellpadding="0" cellspacing="0" width="600" id="emailHeader">
 
             <!-- HEADER ROW // -->
@@ -238,22 +193,13 @@ Sizes: [
                             <!-- CONTENT TABLE // -->
                             <table align="left" border="0" cellpadding="0" cellspacing="0" width="100%">
                               <tr>
-                                <!--
-                                    The "invisibleIntroduction" is the text used for short preview
-                                    of the email before the user opens it (50 characters max). Sometimes,
-                                    you do not want to show this message depending on your design but this
-                                    text is highly recommended.
 
-                                    You do not have to worry if it is hidden, the next <td> will automatically
-                                    center and apply to the width 100% and also shrink to 50% if the first <td>
-                                    is visible.
-                                  -->
                                 <td align="left" valign="middle" id="invisibleIntroduction" class="flexibleContainerBox" style="display:none !important; mso-hide:all;">
                                   <table border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width:100%;">
                                     <tr>
-                                      <td align="left" class="textContent">
-                                        <div style="font-family:Helvetica,Arial,sans-serif;font-size:13px;color:#828282;text-align:center;line-height:120%;">
-                                          The introduction of your message preview goes here. Try to make it short.
+                                      <td align="left">
+                                        <div style="font-size:13px;color:#828282;text-align:center;line-height:120%;">
+                                          Bling Jewelry
                                         </div>
                                       </td>
                                     </tr>
@@ -262,10 +208,10 @@ Sizes: [
                                 <td align="right" valign="middle" class="flexibleContainerBox">
                                   <table border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width:100%;">
                                     <tr>
-                                      <td align="left" class="textContent">
+                                      <td align="left">
                                         <!-- CONTENT // -->
-                                        <div style="font-family:Helvetica,Arial,sans-serif;font-size:13px;color:#828282;text-align:center;line-height:120%;">
-                                          If you can't see this message, <a href="#" target="_blank" style="text-decoration:none;border-bottom:1px solid #828282;color:#828282;"><span style="color:#828282;">view&nbsp;it&nbsp;in&nbsp;your&nbsp;browser</span></a>.
+                                        <div style="font-size:13px;color:#828282;text-align:center;line-height:120%;">
+                                          If you can't see this message, <a href="http://www.blingjewelry.com" target="_blank" style="text-decoration:none;border-bottom:1px solid #828282;color:#828282;"><span style="color:#828282;">view&nbsp;it&nbsp;in&nbsp;your&nbsp;browser</span></a>.
                                         </div>
                                       </td>
                                     </tr>
@@ -289,12 +235,8 @@ Sizes: [
           <!-- // END -->
 
           <!-- EMAIL BODY // -->
-          <!--
-              The table "emailBody" is the email's container.
-              Its width can be set to 100% for a color band
-              that spans the width of the page.
-            -->
-          <table bgcolor="#FFFFFF" border="0" cellpadding="0" cellspacing="0" width="500" id="emailBody">
+
+          <table bgcolor="#FFFFFF" border="0" cellpadding="0" cellspacing="0" width="600" id="emailBody">
 
 
 
@@ -313,20 +255,20 @@ Sizes: [
                             <!-- CONTENT TABLE // -->
                             <table align="left" border="0" cellpadding="0" cellspacing="0" width="100%">
                               <tr>
-                                <td align="left" valign="top" class="flexibleContainerBox">
+                                <td align="left" valign="top">
                                   <table border="0" cellpadding="0" cellspacing="0" width="175" style="max-width: 100%;">
                                     <tr>
-                                      <td align="left" class="textContent">
+                                      <td align="left">
                                         <p style="color:#000000;line-height:100%;font-size:10px;font-weight:normal;margin-top:0;margin-bottom:3px;text-transform: uppercase;text-align:left;">Free US Shipping over $25</p>
                                        <p style="color:#000000;line-height:100%;font-size:10px;font-weight:normal;margin-top:0;margin-bottom:3px;text-transform: uppercase;text-align:left;">Free and Easy Returns</p>                                        
                                       </td>
                                     </tr>
                                   </table>
                                 </td>
-                                <td align="right" valign="middle" class="flexibleContainerBox">
+                                <td align="right" valign="middle">
                                   <table class="flexibleContainerBoxNext" border="0" cellpadding="0" cellspacing="0" width="175" style="max-width: 100%;">
                                     <tr>
-                                      <td align="right" class="textContent">
+                                      <td align="right">
                                         <h3 style="color:#000000;line-height:100%;font-size:10px;font-weight:normal;margin-top:0;margin-bottom:3px;text-align:right;">USA 800-434-9905</h3>
                                         <h3 style="color:#000000;line-height:100%;font-size:10px;font-weight:normal;margin-top:0;margin-bottom:3px;text-align:right;">INT'L 212-683-1746</h3>                                        
                                       </td>
@@ -367,8 +309,8 @@ Sizes: [
                             <!-- CONTENT TABLE // -->
                             <table border="0" cellpadding="0" cellspacing="0" width="100%">
                               <tr>
-                                <td valign="top" align="center" class="imageContent">
-                                  <img src="logo@2x.png" width="300" class="flexibleImage" style="max-width:300px;width:100%;display:block;" alt="Text" title="Text" />
+                                <td valign="top" align="center">
+                                  <img src="logo@2x.png" width="275" style="width:275px;display:block;" alt="Text" title="Text" />
                                 </td>
                               </tr>
                             </table>
@@ -400,7 +342,7 @@ Sizes: [
                       <!-- FLEXIBLE CONTAINER // -->
                       <table border="0" cellpadding="0" cellspacing="0" width="600" class="flexibleContainer">
                         <tr>
-                          <td valign="top" width="600" class="flexibleContainerCell" style="padding: 0px 30px;">
+                          <td valign="top" width="600" class="flexibleContainerCell" >
 
                             <!-- CONTENT TABLE // -->
                             <!--<table align="left" border="0" cellpadding="0" cellspacing="0" width="100%">
@@ -478,6 +420,8 @@ Sizes: [
               </td>
             </tr>
             <!-- // MODULE ROW -->
+
+
             <!-- MODULE ROW FULL WIDTH IMAGE// -->
             <tr>
               <td align="center" valign="top">
@@ -517,6 +461,7 @@ Sizes: [
               </td>
             </tr>
             <!-- // MODULE ROW -->
+
             <!-- MODULE ROW FULL WIDTH IMAGE// -->
             <tr>
               <td align="center" valign="top">
@@ -603,13 +548,25 @@ Sizes: [
                             <!-- CONTENT TABLE // -->
                             <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
                               <tr>
-                                <td align="center" width="50%" class="textContent">
+                                <td align="center" width="50%">
                                   <img src="item1.jpg" class="flexibleImage" style="max-width:200px;" alt="Text" title="Text" />
                                 </td>
-                                <td align="center" width="50%"  class="textContent">
+                                <td align="center" width="50%">
                                   <h3 style="color:#000000;line-height:125%;font-size:12px;font-weight:normal;margin-top:0;text-align:center; text-transform: uppercase;">Majestic Crown Drops</h3>
                                   <h3 style="color:#000000;line-height:125%;font-size:12px;font-weight:normal;margin-top:0;text-align:center;">$26.99</h3>
-                                  <a href="https://www.blingjewelry.com" target="_blank"><div style="width:50%; color:#000000; border:1px solid black; text-transform:uppercase; text-decoration:none;font-weight:bold; padding:8px; font-size:10px;line-height:100%;" >Shop Now</div></a>  
+
+                                  <!-- BUTTON TABLE // -->
+                                  <table border="0" cellpadding="0" cellspacing="0" width="50%" style="border-collapse: separate !important;border:solid 1px #000000;color:#ffffff">
+                                    <tr>
+                                      <td align="center" valign="middle" style="padding:8px 15px;font-size:10px; ">
+                                        <a href="https://www.blingjewelry.com" style="color:#000000;line-height:100%;font-size:10px;font-weight:normal;text-align:center; text-transform: uppercase;border-bottom:0px;">
+                                          Shop Now
+                                        </a>
+                                      </td>
+                                    </tr>
+                                  </table>
+                                  <!-- // BUTTON TABLE -->
+
                                 </td>
                               </tr> 
                             </table>
@@ -640,13 +597,24 @@ Sizes: [
                             <!-- CONTENT TABLE // -->
                             <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
                               <tr>
-                                <td align="center" width="50%" class="textContent">
+                                <td align="center" width="50%">
                                   <img src="item2.jpg" class="flexibleImage" style="max-width:200px;" alt="Text" title="Text" />
                                 </td>
-                                <td align="center" width="50%"  class="textContent">
+                                <td align="center" width="50%">
                                   <h3 style="color:#000000;line-height:125%;font-size:12px;font-weight:normal;margin-top:0;text-align:center; text-transform: uppercase;">Mighty Heart Pendant</h3>
                                   <h3 style="color:#000000;line-height:125%;font-size:12px;font-weight:normal;margin-top:0;text-align:center;">$20.99</h3>
-                                  <a href="https://www.blingjewelry.com" target="_blank"><div style="width:50%; color:#000000; border:1px solid black; text-transform:uppercase; text-decoration:none;font-weight:bold; padding:8px; font-size:10px;line-height:100%;" >Shop Now</div></a>
+
+                                  <!-- BUTTON TABLE // -->
+                                  <table border="0" cellpadding="0" cellspacing="0" width="50%" style="border-collapse: separate !important;border:solid 1px #000000;color:#ffffff">
+                                    <tr>
+                                      <td align="center" valign="middle" style="padding:8px 15px;font-size:10px; ">
+                                        <a href="https://www.blingjewelry.com" style="color:#000000;line-height:100%;font-size:10px;font-weight:normal;text-align:center; text-transform: uppercase;border-bottom:0px;">Shop Now
+                                        </a>
+                                      </td>
+                                    </tr>
+                                  </table>
+                                  <!-- // BUTTON TABLE -->
+
                                 </td>
                               </tr> 
                             </table>
@@ -705,8 +673,8 @@ Sizes: [
                                 <td align="center" valign="middle" class="flexibleContainerBox">
                                   <table class="flexibleContainerBoxNext" border="0" cellpadding="0" cellspacing="0" width="210" style="max-width:100%;">
                                     <tr>
-                                      <td align="right" class="textContent">
-                                        <div style="color:#000000;line-height:125%;font-family:Helvetica,Arial,sans-serif;font-size:16px;font-weight:normal;margin-top:0;text-align:right; text-transform: uppercase;">Subtotal:  $59.98</div>
+                                      <td align="right">
+                                        <div style="color:#000000;line-height:125%;font-size:16px;font-weight:normal;margin-top:0;text-align:right; text-transform: uppercase;">Subtotal:  $59.98</div>
                                       </td>
                                     </tr>
                                   </table>
@@ -727,29 +695,33 @@ Sizes: [
 
 
 
+
+
+
             <!-- COMPLETE YOUR ORDER MODULE ROW // -->
 
             <tr>
               <td align="center" valign="middle">
                 <!-- CENTERING TABLE // -->
-                <table border="0" cellpadding="0" cellspacing="0" width="100%" style="color:#FFFFFF;" bgcolor="#000000">
+                <table border="0" cellpadding="0" cellspacing="0" width="100%">
                   <tr>
                     <td align="center" valign="top">
                       <!-- FLEXIBLE CONTAINER // -->
                       <table border="0" cellpadding="0" cellspacing="0" width="600" class="flexibleContainer">
                         <tr>
                           <td align="center" valign="top" width="600" class="flexibleContainerCell">
-                            <a href="https://www.blingjewelry.com/checkout/cart/" style="color:#FFFFFF; border-bottom:0px;">
-                            <!-- CONTENT TABLE // -->
-                            <table border="0" cellpadding="10" cellspacing="0" width="100%">
+
+                            <!-- BUTTON TABLE // -->
+                            <table border="0" cellpadding="0" cellspacing="0" bgcolor="#000000" style="border-collapse: separate !important;background:#000000;color:#ffffff">
                               <tr>
-                                <td align="center" valign="middle" class="textContent">
-                                  <div style="color:#FFFFFF;line-height:100%;font-family:Helvetica,Arial,sans-serif;font-size:20px;font-weight:normal;text-align:center; text-transform: uppercase;">Complete your order &#9654</div>
+                                <td align="center" valign="middle" style="padding:15px 40px;font-size:20px;">
+                                  <a href="https://www.blingjewelry.com/checkout/cart/" style="color:#FFFFFF;line-height:100%;font-size:20px;font-weight:normal;text-align:center; text-transform: uppercase;color:#FFFFFF; border-bottom:0px;background:#000000;">
+                                    Complete Your Order &#9654
+                                  </a>
                                 </td>
                               </tr>
                             </table>
-                            <!-- // CONTENT TABLE -->
-                            </a>
+                            <!-- // BUTTON TABLE -->
                           </td>
                         </tr>
                       </table>
@@ -761,9 +733,6 @@ Sizes: [
               </td>
             </tr>
             <!-- // MODULE ROW -->
-
-
-
 
 
             <!-- MODULE ROW // -->
@@ -781,8 +750,8 @@ Sizes: [
                             <!-- CONTENT TABLE // -->
                             <table border="0" cellpadding="40" cellspacing="0" width="100%">
                               <tr>
-                                <td align="center" valign="middle" class="textContent">
-                                  <div style="color:#000000;line-height:100%;font-family:Helvetica,Arial,sans-serif;font-size:20px;font-weight:normal;text-align:center; text-transform: uppercase;">Recommended for you</div>
+                                <td align="center" valign="middle">
+                                  <div style="color:#000000;line-height:100%;font-size:20px;font-weight:normal;text-align:center; text-transform: uppercase;">Recommended for you</div>
                                 </td>
                               </tr>
                             </table>
@@ -799,7 +768,6 @@ Sizes: [
               </td>
             </tr>
             <!-- // MODULE ROW -->
-
             <!-- // MODULE ROW -->
             <tr>
               <td align="center" valign="top">
@@ -862,6 +830,7 @@ Sizes: [
 
 
 
+
             <!-- FOOTER ROW // -->
             <tr>
               <td align="center" valign="top">
@@ -880,12 +849,12 @@ Sizes: [
                                   <!-- CONTENT TABLE // -->
                                   <table border="0" cellpadding="0" cellspacing="0" width="100%">
                                     <tr>
-                                      <td valign="top" class="textContent">
+                                      <td valign="top" >
                                         <div style="text-align:center;font-size:12px; font-style: italic; margin-bottom:10px;color:#e7168e;line-height:135%;">"Greet every day with a little Bling.  If you're going to rise, you might as well shine."</div>
                                       </td>
                                     </tr>
                                     <tr>
-                                       <td valign="top" class="textContent">
+                                       <td valign="top"f>
                                         <div mc:edit="body" style="text-align:center;font-size:10px; margin-bottom:0;color:#000000;line-height:135%;">Bling Jewelry | 1261 Broadway | Suite 1002 | New York, NY 10001 | United States</div>
                                       </td>
                                     </tr>
